@@ -10,7 +10,7 @@ public class Lab03vst
 	{
       System.out.println("Lab03, 100 Point Version\n");
       int milli = 10000123;
-	  System.out.println ("Starting seconds:" +milli);
+	  System.out.println ("Starting milli-seconds:" +milli);
 	  System.out.println("Hours:" +milli/3600000);
 	  int millisecleftafthr = milli%3600000;
 	  System.out.println("Minutes:" +millisecleftafthr/60000);
