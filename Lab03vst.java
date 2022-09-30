@@ -10,13 +10,28 @@ public class Lab03vst
 	{
       System.out.println("Lab03, 100 Point Version\n");
       int milli = 10000123;
-	  System.out.println ("Starting milli-seconds:" +milli);
-	  System.out.println("Hours:" +milli/3600000);
-	  int millisecleftafthr = milli%3600000;
-	  System.out.println("Minutes:" +millisecleftafthr/60000);
-	  int millisecleftaftmin = millisecleftafthr%60000;
-	  System.out.println("Seconds:" +millisecleftaftmin/1000);
-	  System.out.println("Milli Seconds:" +millisecleftaftmin%1000);
+
+		System.out.println ("Starting milli-seconds:" +milli);
+
+		int hours = milli/3600000;
+
+		System.out.println("Hours:"  +hours);
+
+		int millisecleftafthr = milli%3600000;
+
+		int minutes = millisecleftafthr/60000;
+
+		System.out.println("Minutes:" +minutes);
+
+		int millisecleftaftmin = millisecleftafthr%60000;
+
+		int seconds = millisecleftaftmin/1000;
+
+		System.out.println("Seconds:" +seconds);
+
+		int milliSeconds = millisecleftaftmin%1000;
+
+		System.out.println("Milli Seconds:" +milliSeconds);
 
 	}
 }
